@@ -15,14 +15,16 @@ This plugin requires node 6.10.0
 
 2. create `settings.js` under `/src` folder like below: 
 
-`export default
+```JavaScript
+export default
 {
     "url": "https://myserver.com/onem2m",
     "ae": [
         {"text": "AE 1", "value": "ae_1"},
         {"text": "AE 2", "value": "ae_2"},
     ]
-}`
+}
+```
 
 3. build:
 
