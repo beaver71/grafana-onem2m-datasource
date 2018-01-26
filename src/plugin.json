@@ -13,7 +13,7 @@
   "info": {
     "description": "onem2m datasource",
     "author": {
-      "name": "TI Labs",
+      "name": "Beaver71",
       "url": ""
     },
     "logos": {
@@ -21,11 +21,11 @@
       "large": "img/onem2m_logo.svg"
     },
     "links": [
-      {"name": "GitHub", "url": "https://github.com/grafana/onem2m-datasource"},
-      {"name": "MIT License", "url": "https://github.com/grafana/onem2m-datasource/blob/master/LICENSE"}
+      {"name": "GitHub", "url": "https://github.com/beaver71/grafana-onem2m-datasource"},
+      {"name": "MIT License", "url": "https://github.com/beaver71/grafana-onem2m-datasource/blob/master/LICENSE"}
     ],
     "version": "1.0.0",
-    "updated": "2018-01-23"
+    "updated": "2018-01-26"
   },
 
   "dependencies": {

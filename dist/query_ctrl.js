@@ -3,7 +3,7 @@
 System.register(['app/plugins/sdk', './css/query-editor.css!'], function (_export, _context) {
     "use strict";
 
-    var QueryCtrl, _createClass, GenericDatasourceQueryCtrl;
+    var QueryCtrl, _createClass, Onem2mDatasourceQueryCtrl;
 
     function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
@@ -58,13 +58,13 @@ System.register(['app/plugins/sdk', './css/query-editor.css!'], function (_expor
                 };
             }();
 
-            _export('GenericDatasourceQueryCtrl', GenericDatasourceQueryCtrl = function (_QueryCtrl) {
-                _inherits(GenericDatasourceQueryCtrl, _QueryCtrl);
+            _export('Onem2mDatasourceQueryCtrl', Onem2mDatasourceQueryCtrl = function (_QueryCtrl) {
+                _inherits(Onem2mDatasourceQueryCtrl, _QueryCtrl);
 
-                function GenericDatasourceQueryCtrl($scope, $injector) {
-                    _classCallCheck(this, GenericDatasourceQueryCtrl);
+                function Onem2mDatasourceQueryCtrl($scope, $injector) {
+                    _classCallCheck(this, Onem2mDatasourceQueryCtrl);
 
-                    var _this = _possibleConstructorReturn(this, (GenericDatasourceQueryCtrl.__proto__ || Object.getPrototypeOf(GenericDatasourceQueryCtrl)).call(this, $scope, $injector));
+                    var _this = _possibleConstructorReturn(this, (Onem2mDatasourceQueryCtrl.__proto__ || Object.getPrototypeOf(Onem2mDatasourceQueryCtrl)).call(this, $scope, $injector));
 
                     _this.scope = $scope;
                     _this.target.target = _this.target.target || 'select metric';
@@ -76,11 +76,11 @@ System.register(['app/plugins/sdk', './css/query-editor.css!'], function (_expor
                         _this.scope.json_sample = json_sample;
                     });
 
-                    console.log("GenericDatasourceQueryCtrl", _this.target);
+                    console.log("Onem2mDatasourceQueryCtrl", _this.target);
                     return _this;
                 }
 
-                _createClass(GenericDatasourceQueryCtrl, [{
+                _createClass(Onem2mDatasourceQueryCtrl, [{
                     key: 'getOptions',
                     value: function getOptions(query) {
                         return this.datasource.metricFindQuery(query || '');
@@ -103,12 +103,12 @@ System.register(['app/plugins/sdk', './css/query-editor.css!'], function (_expor
                     }
                 }]);
 
-                return GenericDatasourceQueryCtrl;
+                return Onem2mDatasourceQueryCtrl;
             }(QueryCtrl));
 
-            _export('GenericDatasourceQueryCtrl', GenericDatasourceQueryCtrl);
+            _export('Onem2mDatasourceQueryCtrl', Onem2mDatasourceQueryCtrl);
 
-            GenericDatasourceQueryCtrl.templateUrl = 'partials/query.editor.html';
+            Onem2mDatasourceQueryCtrl.templateUrl = 'partials/query.editor.html';
         }
     };
 });

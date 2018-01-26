@@ -3,7 +3,7 @@
 System.register(["lodash", "moment"], function (_export, _context) {
     "use strict";
 
-    var _, moment, _createClass, GenericDatasource;
+    var _, moment, _createClass, Onem2mDatasource;
 
     function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
@@ -36,9 +36,9 @@ System.register(["lodash", "moment"], function (_export, _context) {
                 };
             }();
 
-            _export("GenericDatasource", GenericDatasource = function () {
-                function GenericDatasource(instanceSettings, $q, backendSrv, templateSrv) {
-                    _classCallCheck(this, GenericDatasource);
+            _export("Onem2mDatasource", Onem2mDatasource = function () {
+                function Onem2mDatasource(instanceSettings, $q, backendSrv, templateSrv) {
+                    _classCallCheck(this, Onem2mDatasource);
 
                     this.type = instanceSettings.type;
                     this.url = instanceSettings.url;
@@ -58,7 +58,7 @@ System.register(["lodash", "moment"], function (_export, _context) {
                     }
                 }
 
-                _createClass(GenericDatasource, [{
+                _createClass(Onem2mDatasource, [{
                     key: "query",
                     value: function query(options) {
                         var _this2 = this;
@@ -438,10 +438,10 @@ System.register(["lodash", "moment"], function (_export, _context) {
                     }
                 }]);
 
-                return GenericDatasource;
+                return Onem2mDatasource;
             }());
 
-            _export("GenericDatasource", GenericDatasource);
+            _export("Onem2mDatasource", Onem2mDatasource);
         }
     };
 });

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-export class GenericConfigCtrl{
+export class Onem2mConfigCtrl{
     
     /** @ngInject */
     constructor($scope) {
@@ -12,7 +12,7 @@ export class GenericConfigCtrl{
         this.current.basicAuthPassword = this.current.basicAuthPassword || "";        
         this.current.jsonData.ae = this.current.jsonData.ae || 'Select or write AE';
         this.current.jsonData.origin = this.current.jsonData.origin || 'Origin';
-        console.log("GenericConfigCtrl:", this.current);
+        console.log("Onem2mConfigCtrl:", this.current);
     }
 
     aeList() {
@@ -43,4 +43,4 @@ export class GenericConfigCtrl{
 
 }
 
-GenericConfigCtrl.templateUrl = 'partials/config.html';
+Onem2mConfigCtrl.templateUrl = 'partials/config.html';

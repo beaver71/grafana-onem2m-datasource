@@ -3,7 +3,7 @@
 System.register(["lodash"], function (_export, _context) {
     "use strict";
 
-    var _, _createClass, GenericConfigCtrl;
+    var _, _createClass, Onem2mConfigCtrl;
 
     function _classCallCheck(instance, Constructor) {
         if (!(instance instanceof Constructor)) {
@@ -34,11 +34,11 @@ System.register(["lodash"], function (_export, _context) {
                 };
             }();
 
-            _export("GenericConfigCtrl", GenericConfigCtrl = function () {
+            _export("Onem2mConfigCtrl", Onem2mConfigCtrl = function () {
 
                 /** @ngInject */
-                function GenericConfigCtrl($scope) {
-                    _classCallCheck(this, GenericConfigCtrl);
+                function Onem2mConfigCtrl($scope) {
+                    _classCallCheck(this, Onem2mConfigCtrl);
 
                     // defaults
                     this.current.url = this.current.url || "https://icon-lab.tim.it/onem2m";
@@ -48,10 +48,10 @@ System.register(["lodash"], function (_export, _context) {
                     this.current.basicAuthPassword = this.current.basicAuthPassword || "";
                     this.current.jsonData.ae = this.current.jsonData.ae || 'Select or write AE';
                     this.current.jsonData.origin = this.current.jsonData.origin || 'Origin';
-                    console.log("GenericConfigCtrl:", this.current);
+                    console.log("Onem2mConfigCtrl:", this.current);
                 }
 
-                _createClass(GenericConfigCtrl, [{
+                _createClass(Onem2mConfigCtrl, [{
                     key: "aeList",
                     value: function aeList() {
                         var list = [{ text: 'autopilot', value: 'autopilot' }, { text: 'blockchain', value: 'blockchain' }, { text: 'cnit', value: 'cnit' }, { text: 'cosmo', value: 'cosmo' }, { text: 'ecogest', value: 'ecogest' }, { text: 'eeb', value: 'eeb' }, { text: 'firenze', value: 'firenze' }, { text: 'livorno', value: 'livorno' }, { text: 'monica', value: 'monica' }, { text: 'nbiot', value: 'nbiot' }, { text: 'nttdata', value: 'nttdata' }, { text: 'oal', value: 'oal' }, { text: 'publicsafety', value: 'publicsafety' }, { text: 'tester', value: 'tester' }, { text: 'waterview', value: 'waterview' }];
@@ -65,12 +65,12 @@ System.register(["lodash"], function (_export, _context) {
                     }
                 }]);
 
-                return GenericConfigCtrl;
+                return Onem2mConfigCtrl;
             }());
 
-            _export("GenericConfigCtrl", GenericConfigCtrl);
+            _export("Onem2mConfigCtrl", Onem2mConfigCtrl);
 
-            GenericConfigCtrl.templateUrl = 'partials/config.html';
+            Onem2mConfigCtrl.templateUrl = 'partials/config.html';
         }
     };
 });

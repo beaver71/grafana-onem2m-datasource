@@ -1,47 +1,47 @@
 'use strict';
 
 System.register(['./datasource', './query_ctrl', './config_ctrl'], function (_export, _context) {
-  "use strict";
+    "use strict";
 
-  var GenericDatasource, GenericDatasourceQueryCtrl, GenericConfigCtrl, GenericQueryOptionsCtrl, GenericAnnotationsQueryCtrl;
+    var Onem2mDatasource, Onem2mDatasourceQueryCtrl, Onem2mConfigCtrl, Onem2mQueryOptionsCtrl, Onem2mAnnotationsQueryCtrl;
 
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
     }
-  }
 
-  return {
-    setters: [function (_datasource) {
-      GenericDatasource = _datasource.GenericDatasource;
-    }, function (_query_ctrl) {
-      GenericDatasourceQueryCtrl = _query_ctrl.GenericDatasourceQueryCtrl;
-    }, function (_config_ctrl) {
-      GenericConfigCtrl = _config_ctrl.GenericConfigCtrl;
-    }],
-    execute: function () {
-      _export('QueryOptionsCtrl', GenericQueryOptionsCtrl = function GenericQueryOptionsCtrl() {
-        _classCallCheck(this, GenericQueryOptionsCtrl);
-      });
+    return {
+        setters: [function (_datasource) {
+            Onem2mDatasource = _datasource.Onem2mDatasource;
+        }, function (_query_ctrl) {
+            Onem2mDatasourceQueryCtrl = _query_ctrl.Onem2mDatasourceQueryCtrl;
+        }, function (_config_ctrl) {
+            Onem2mConfigCtrl = _config_ctrl.Onem2mConfigCtrl;
+        }],
+        execute: function () {
+            _export('QueryOptionsCtrl', Onem2mQueryOptionsCtrl = function Onem2mQueryOptionsCtrl() {
+                _classCallCheck(this, Onem2mQueryOptionsCtrl);
+            });
 
-      GenericQueryOptionsCtrl.templateUrl = 'partials/query.options.html';
+            Onem2mQueryOptionsCtrl.templateUrl = 'partials/query.options.html';
 
-      _export('AnnotationsQueryCtrl', GenericAnnotationsQueryCtrl = function GenericAnnotationsQueryCtrl() {
-        _classCallCheck(this, GenericAnnotationsQueryCtrl);
-      });
+            _export('AnnotationsQueryCtrl', Onem2mAnnotationsQueryCtrl = function Onem2mAnnotationsQueryCtrl() {
+                _classCallCheck(this, Onem2mAnnotationsQueryCtrl);
+            });
 
-      GenericAnnotationsQueryCtrl.templateUrl = 'partials/annotations.editor.html';
+            Onem2mAnnotationsQueryCtrl.templateUrl = 'partials/annotations.editor.html';
 
-      _export('Datasource', GenericDatasource);
+            _export('Datasource', Onem2mDatasource);
 
-      _export('QueryCtrl', GenericDatasourceQueryCtrl);
+            _export('QueryCtrl', Onem2mDatasourceQueryCtrl);
 
-      _export('ConfigCtrl', GenericConfigCtrl);
+            _export('ConfigCtrl', Onem2mConfigCtrl);
 
-      _export('QueryOptionsCtrl', GenericQueryOptionsCtrl);
+            _export('QueryOptionsCtrl', Onem2mQueryOptionsCtrl);
 
-      _export('AnnotationsQueryCtrl', GenericAnnotationsQueryCtrl);
-    }
-  };
+            _export('AnnotationsQueryCtrl', Onem2mAnnotationsQueryCtrl);
+        }
+    };
 });
 //# sourceMappingURL=module.js.map

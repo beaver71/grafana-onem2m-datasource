@@ -2,7 +2,7 @@ import _ from "lodash";
 
 import moment from "moment";
 
-export class GenericDatasource {
+export class Onem2mDatasource {
 
   constructor(instanceSettings, $q, backendSrv, templateSrv) {
     this.type = instanceSettings.type;

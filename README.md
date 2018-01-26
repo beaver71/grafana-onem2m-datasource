@@ -28,4 +28,5 @@ Install manually this plugin as specified in [Grafana Docs](http://docs.grafana.
 This plugin requires node 6.10.0
 
 `npm install`
+
 `grunt`
