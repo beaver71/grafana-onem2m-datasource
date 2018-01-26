@@ -1,0 +1,42 @@
+<datasource-http-settings current="ctrl.current" suggest-url="https://icon-lab.tim.it/onem2m">
+</datasource-http-settings>
+
+<h3 class="page-heading">OneM2M Details</h3>
+
+<!--<div class="gf-form-group">
+    <div class="gf-form-inline">
+        <div class="gf-form max-width-30">
+            <span class="gf-form-label width-7">Application Entity</span>
+            <input type="text" class="gf-form-input" ng-model='ctrl.current.jsonData.ae' placeholder=""></input>
+        </div>
+    </div>
+</div>-->
+
+<div class="gf-form-group">
+    <div class="gf-form-inline">
+        <div class="gf-form">
+            <span class="gf-form-label width-12">
+                    Application Entity
+                    <info-popover mode="right-normal">
+                            oneM2M AE
+                    </info-popover>
+            </span>
+            <gf-form-dropdown model="ctrl.current.jsonData.ae"
+                              allow-custom="true"
+                              lookup-text="true"
+                              get-options="ctrl.aeList()"
+                              on-change="ctrl.aeChanged()"
+                              css-class="width-16">
+            </gf-form-dropdown>
+        </div>
+    </div>
+</div>
+
+<div class="gf-form-group">
+    <div class="gf-form-inline">
+        <div class="gf-form max-width-30">
+            <span class="gf-form-label width-7">Origin</span>
+            <input type="text" class="gf-form-input" ng-model='ctrl.current.jsonData.origin' placeholder=""></input>
+        </div>
+    </div>
+</div>

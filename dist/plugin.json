@@ -1,0 +1,35 @@
+{
+  "name": "onem2m",
+  "id": "grafana-onem2m-datasource",
+  "type": "datasource",
+
+  "partials": {
+    "config": "public/app/plugins/datasource/onem2m/partials/config.html"
+  },
+
+  "metrics": true,
+  "annotations": true,
+
+  "info": {
+    "description": "onem2m datasource",
+    "author": {
+      "name": "TI Labs",
+      "url": ""
+    },
+    "logos": {
+      "small": "img/onem2m_logo.svg",
+      "large": "img/onem2m_logo.svg"
+    },
+    "links": [
+      {"name": "GitHub", "url": "https://github.com/grafana/onem2m-datasource"},
+      {"name": "MIT License", "url": "https://github.com/grafana/onem2m-datasource/blob/master/LICENSE"}
+    ],
+    "version": "1.0.0",
+    "updated": "2018-01-23"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}

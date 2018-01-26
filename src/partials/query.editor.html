@@ -1,0 +1,55 @@
+<query-editor-row query-ctrl="ctrl" class="generic-datasource-query-row" has-text-edit-mode="true">
+    <div class="gf-form-inline">
+        <div class="gf-form max-width-8">
+            <select class="gf-form-input" ng-model="ctrl.target.type" ng-options="f as f for f in ['table', 'timeserie']"></select>
+        </div>
+
+        <div class="gf-form" ng-if="ctrl.target.rawQuery">
+            <textarea class="gf-form-input" rows="5" ng-model="ctrl.target.target" spellcheck="false" ng-blur="ctrl.onChangeInternal()" />
+        </div>
+
+        <div ng-if="!ctrl.target.rawQuery">
+            <div class="gf-form-inline">
+                <div class="gf-form">
+                    <gf-form-dropdown model="ctrl.target.target"
+                                      allow-custom="true"
+                                      lookup-text="true"
+                                      get-options="ctrl.getOptions($query)"
+                                      on-change="ctrl.onChangeInternal()">
+                    </gf-form-dropdown>
+                </div>
+
+                <div class="gf-form">
+                    <label class="gf-form-label width-8">
+                            Field
+                            <info-popover mode="right-normal">
+                                    Leave blank for auto handling based on JSON properties (only flat JSON) or use JSON path sintax
+                            </info-popover>
+                    </label>
+                    <!--          <input type="text" class="gf-form-input" ng-model="ctrl.target.field.path" spellcheck='false' placeholder="json path" ng-blur="ctrl.onChangeInternal()">-->
+                    <gf-form-dropdown model="ctrl.target.field.path"
+                                      placeholder="field name or json path"
+                                      allow-custom="true"
+                                      lookup-text="true"
+                                      get-options="ctrl.getFields($query)"
+                                      on-change="ctrl.onChangeInternal()"
+                                      css-class="width-24">
+                    </gf-form-dropdown>
+                </div>
+                                
+                <div class="gf-form">
+                    <input type="text" class="gf-form-input" ng-model="ctrl.target.field.name" spellcheck='false' placeholder="field label" ng-blur="ctrl.onChangeInternal()">
+                </div>
+
+            </div>
+        </div>
+        <div class="gf-form gf-form--grow">
+            <div class="gf-form-label gf-form-label--grow">
+                <span class="pull-right" style="margin-right:15px">json_sample:</span>
+                <info-popover mode="right-absolute">
+                       {{json_sample}}
+                </info-popover>
+            </div>
+        </div>
+    </div>
+</query-editor-row>
