@@ -39,3 +39,6 @@ grafana
 # Test artifacts
 /dist/test/
 /nbproject/private/
+
+src/settings.js
+dist/settings.js
